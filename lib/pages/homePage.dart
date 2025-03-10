@@ -43,8 +43,19 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: <Widget>[
-          Center(
-            child: Image(image: AssetImage('assets/gorengan.jpg')),
+          SizedBox(
+            height: 200,
+            child: PageView(
+              children: [
+                Image(image: AssetImage('assets/gorengan.jpg')),
+                Image(image: AssetImage('assets/tahu_aci.jpg')),
+                Image(image: AssetImage('assets/tahu_bulat.jpg')),
+                Image(image: AssetImage('assets/tahu_walik.jpg')),
+                Image(image: AssetImage('assets/tahu_bakso.jpg')),
+                Image(image: AssetImage('assets/tahu_sumedang.jpg')),
+                Image(image: AssetImage('assets/tahu_susu.jpg')),
+              ],
+            ),
           ),
           Text(
             'Menu Makanan',
